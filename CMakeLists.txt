@@ -12,6 +12,7 @@ set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -fpermissive")
 set(SOURCES src/main.c src/myf.c src/callbacks.c) #alternative command for wildcards: file(GLOB SOURCES "src/*.c")
 add_executable(${PROG} ${SOURCES})
 
+
 add_definitions( -DGTKVER=2 )
 
 #-----------------------------------------------
