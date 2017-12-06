@@ -1,5 +1,4 @@
 #My CMakeLists.txt
-wqe
 cmake_minimum_required (VERSION 2.8)
 project (Aula12Ex26)
 set(PROG myf)
@@ -15,7 +14,8 @@ add_definitions( -DGTKVER=2 )
 
 #Cf. http://docs.opencv.org/doc/tutorials/introduction/linux_gcc_cmake/linux_gcc_cmake.html
 #Add an external library like OpenCV
-find_package( OpenCV 2 REQUIRED )
+#find_package( OpenCV 2 REQUIRED )
+find_package( OpenCV 2.4.9.1 EXACT)
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 #The recommended way to find packages automatically using PkgConfig
