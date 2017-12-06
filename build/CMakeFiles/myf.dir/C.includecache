@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/mike/workingcopy/moliveira_pari2017/src/callbacks.c
+myf.h
+/home/mike/workingcopy/moliveira_pari2017/src/myf.h
 
 /home/mike/workingcopy/moliveira_pari2017/src/main.c
 myf.h
@@ -23,10 +25,6 @@ cv.h
 -
 highgui.h
 -
-prototypes.h
-/home/mike/workingcopy/moliveira_pari2017/src/prototypes.h
-
-/home/mike/workingcopy/moliveira_pari2017/src/prototypes.h
 
 /usr/include/atk-1.0/atk/atk-enum-types.h
 atk/atkversion.h
