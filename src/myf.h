@@ -14,6 +14,8 @@
 CvCapture *pari_StartImageAcquisition();
 void pari_PerformImageAcquisition(CvCapture *capt);
 gboolean pari_UpdateImageAreas(gpointer data);
+GdkPixbuf *pari_ConvertOpenCv2Gtk(IplImage * image, int dst_w, int dst_h);
+
 
 #if defined (_MAIN_C_)
 GtkBuilder *builderG;
