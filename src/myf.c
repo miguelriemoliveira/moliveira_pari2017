@@ -56,3 +56,18 @@ void pari_RefreshDrawingArea( char * widgetName, IplImage *img)
   cairo_destroy(cr);
   g_object_unref(pix);  //free the pixbuf...
 }
+
+void pari_ProcessUserOperations(IplImage *src, IplImage *dst)
+{
+  /*If nothing is to be done at least the dst is the same as src*/
+  cvCopy( src, dst, NULL);
+
+  /*Now operate all functions accumulated (one after one)*/
+  /*pari_UserOperation1(dst, dst, builderG, (gpointer)"checkbutton1", ...);*/
+  /*pari_UserOperation2(dst, dst, builderG, (gpointer)"checkbutton2", ...);*/
+  /*pari_UserOperation3(dst, dst, builderG, (gpointer)"checkbutton3", ...);*/
+  /*pari_UserOperation4(dst, dst, builderG, (gpointer)"checkbutton4", ...);*/
+  /*pari_UserOperation5(dst, dst, builderG, (gpointer)"checkbutton5", ...);*/
+  /*pari_UserOperation6(dst, dst, builderG, (gpointer)"checkbutton6", ...);*/
+}
+
