@@ -56,3 +56,6 @@ dkms.conf
 
 #Vim swp files
 *.swp
+
+#build stuff
+build/*
