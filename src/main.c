@@ -34,15 +34,15 @@ int main(int argc, char *argv[])
 
 	/*These could be in a special init function... */
 	/*signal(SIGINT, pari_InterceptCTRL_C);*/
-	/*g_timeout_add(30, (GSourceFunc)pari_UpdateImageAreas, (gpointer)NULL);*/
+  g_timeout_add(30, (GSourceFunc)pari_UpdateImageAreas, (gpointer)NULL);
 	
 #if GTKVER < 3
-	/*captureG=pari_StartImageAcquisition();*/
-	/*if( ! captureG )*/
-	/*{*/
-		/*printf("Could not start Image Capture\n");*/
-		/*exit(0);*/
-	/*}*/
+  captureG=pari_StartImageAcquisition();
+  if( ! captureG )
+  {
+    printf("Could not start Image Capture\n");
+    exit(0);
+  }
 #endif
 
 	/* start the event loop */

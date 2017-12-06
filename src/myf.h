@@ -10,7 +10,10 @@
 //...
 
 /* prototypes should be within the last lines of header */
-#include "prototypes.h"
+//#include "prototypes.h"
+CvCapture *pari_StartImageAcquisition();
+void pari_PerformImageAcquisition(CvCapture *capt);
+gboolean pari_UpdateImageAreas(gpointer data);
 
 #if defined (_MAIN_C_)
 GtkBuilder *builderG;
