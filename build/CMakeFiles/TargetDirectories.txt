@@ -1,0 +1,5 @@
+/home/mike/workingcopy/moliveira_pari2017/build/CMakeFiles/edit_cache.dir
+/home/mike/workingcopy/moliveira_pari2017/build/CMakeFiles/myf.dir
+/home/mike/workingcopy/moliveira_pari2017/build/CMakeFiles/cpfiles.dir
+/home/mike/workingcopy/moliveira_pari2017/build/CMakeFiles/doc.dir
+/home/mike/workingcopy/moliveira_pari2017/build/CMakeFiles/rebuild_cache.dir

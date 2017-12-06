@@ -3,6 +3,10 @@ cmake_minimum_required (VERSION 2.8)
 project (Aula12Ex26)
 set(PROG myf)
 
+#Added by mike
+set(CMAKE_C_COMPILER /usr/bin/g++)
+set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -fpermissive") 
+
 #---------------------------------
 
 set(SOURCES src/main.c src/myf.c src/callbacks.c) #alternative command for wildcards: file(GLOB SOURCES "src/*.c")
@@ -26,6 +30,8 @@ pkg_check_modules(GTK REQUIRED gtk+-2.0)
 include_directories(${GTK_INCLUDE_DIRS})
 link_directories(${GTK_LIBRARY_DIRS})
 
+
+message(STATUS "BLBLBLB = ${OpenCV_LIBS}" )
 target_link_libraries(${PROG} m ${GTK_LIBRARIES} ${OpenCV_LIBS} ) 
 
 #-----------------------------------------------------

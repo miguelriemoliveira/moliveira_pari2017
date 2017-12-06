@@ -1,4 +1,4 @@
-fndef _MYF_H
+#ifndef _MYF_H
 #define _MYF_H
 
 //...

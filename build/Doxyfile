@@ -1,0 +1,22 @@
+#Some Doxygen common/useful configurations
+#Items between @ @ are configured dynamically by cmake in CMakeLists.txt
+#
+PROJECT_NAME           = "Aula12Ex26"
+PROJECT_NUMBER         = 1.0.0
+STRIP_FROM_PATH        = "/home/mike/workingcopy/moliveira_pari2017" \
+                         "/home/mike/workingcopy/moliveira_pari2017/build"
+INPUT                  = "/home/mike/workingcopy/moliveira_pari2017/doc/mainpage.dox"\ 
+			 "/home/mike/workingcopy/moliveira_pari2017"
+EXCLUDE                = "/home/mike/workingcopy/moliveira_pari2017/build" 
+PROJECT_LOGO           = "/home/mike/workingcopy/moliveira_pari2017/doc/PARI_logo.ico"
+FILE_PATTERNS          = *.h \
+                         *.c
+RECURSIVE              = YES
+#USE_MDFILE_AS_MAINPAGE = "/home/mike/workingcopy/moliveira_pari2017/doc/mainpage.dox"
+
+GENERATE_LATEX         = NO
+HAVE_DOT               = YES
+SOURCE_BROWSER         = YES
+GENERATE_TREEVIEW      = ALL
+HTML_EXTRA_STYLESHEET  = "/home/mike/workingcopy/moliveira_pari2017/doc/doxygen_1.css" 
+#HTML_EXTRA_STYLESHEET  = "/home/mike/workingcopy/moliveira_pari2017/doc/doxygen_3.css" 
